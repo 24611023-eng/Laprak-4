@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tik Tak Top Course</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <div class="logo">
+            <img src="image/5.jpg" alt="Logo">
+            <span>Tik Tak Top</span>
+        </div>
+
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+
+            <!-- Dropdown -->
+            <li class="dropdown">
+                <a href="#pendaftaran">Layanan ▼</a>
+                <ul class="dropdown-menu">
+                    <li><a href="#pendaftaran">Pendaftaran Anggota</a></li>
+                    <li><a href="#info">Informasi Layanan</a></li>
+                </ul>
+            </li>
+
+            <li><a href="#info">Koleksi</a></li>
+        </ul>
+    </nav>
+
+    <!-- JUMBOTRON -->
+    <section id="home" class="jumbotron">
+        <h1>Selamat Datang di Tik Tak Top Course</h1>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section">
+        <h2>Tentang Kami</h2>
+        <p>Lembaga kursus komputer terbaik dengan berbagai program seperti Web, Desain, dan Data.</p>
+    </section>
+
+    <!-- PENDAFTARAN ANGGOTA -->
+    <section id="pendaftaran" class="section">
+        <h2>Pendaftaran Anggota</h2>
+
+        <form id="formPendaftaran">
+
+            <label>Nama Lengkap</label>
+            <input type="text" name="nama" required>
+
+            <label>Program Kursus</label>
+            <select name="program">
+                <option>Desain Grafis</option>
+                <option>Web Programming</option>
+                <option>Data Analysis</option>
+            </select>
+
+            <label>NIK / Nomor Induk Siswa</label>
+            <input type="text" name="nik" required>
+
+            <label>Alamat</label>
+            <textarea name="alamat" required></textarea>
+
+            <label>Nomor WhatsApp</label>
+            <input type="text" name="wa" required>
+
+            <button type="submit">Kirim Pendaftaran</button>
+
+        </form>
+    </section>
+
+    <!-- INFORMASI LAYANAN -->
+    <section id="info" class="section">
+        <h2>Informasi Layanan</h2>
+      <h3>Daftar Kelas Tik Tak Top</h3>
+
+        <ul class="kelas-list">
+            <li>Kelas Dasar Web</li>
+            <li>Kelas Python Pemula</li>
+            <li>Kelas Excel untuk Data</li>
+            <li>Kelas UI/UX Designer</li>
+            <li>Kelas Database SQL</li>
+        </ul>
+    </section>
+
+
+    <!-- FOOTER -->
+    <footer>
+        <p>Alamat: Jl. Raya Pendidikan No. 123, Karawang</p>
+        <p>Contact: 0812-1111-0000</p>
+        <p>Instagram: @tiktaktop | Facebook: TikTakTop Course</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
